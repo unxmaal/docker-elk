@@ -193,7 +193,7 @@ In order to persist Elasticsearch data even after removing the Elasticsearch con
 ```yml
 elasticsearch:
   build: elasticsearch/
-  command: elasticsearch -Des.network.host=_non_loopback_ -Des.cluster.name: my-cluster
+  command: elasticsearch -Ecluster.name=my-cluster
   ports:
     - "9200:9200"
     - "9300:9300"
